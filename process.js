@@ -1,5 +1,5 @@
-const process = (data) => {
- 
+const process = data => {
+
 };
 
 module.exports = process;
