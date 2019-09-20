@@ -5,8 +5,6 @@ const extract = require('./extract');
 
 read('./data/test2.csv', data => {
   //console.log(data);
-
   console.log(extract(data, 'Test1'));
-
   //write('./output/out.csv', data);
 });

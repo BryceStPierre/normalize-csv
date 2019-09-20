@@ -4,7 +4,8 @@
   "description": "A Node script to process a CSV spreadsheet into separate normalized CSV files.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "rm -r output && mkdir output"
   },
   "repository": {
     "type": "git",
