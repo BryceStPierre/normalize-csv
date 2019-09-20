@@ -12,11 +12,9 @@ const read = (path, callback) => {
     l[0].split(',').forEach(h => data.headers.push(h));
 
     for (let i = 1; i < l.length; i++) {
-      let o = {};
-      l[i].split(',').forEach((v, i) => {
-        o[data.headers[i]] = v;
-      });
-      data.rows.push(o);
+      let a = [];
+      l[i].split(',').forEach(v => a.push(v));
+      data.rows.push(a);
     }
 
     return callback(data);
