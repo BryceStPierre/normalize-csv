@@ -14,7 +14,7 @@ const read = (path, callback) => {
     for (let i = 1; i < l.length; i++) {
       let a = [];
       l[i].split(',').forEach(v => a.push(v));
-      data.rows.push(a);
+      data.rows.push(isNaN(a) ? a : Number(a));
     }
 
     return callback(data);
