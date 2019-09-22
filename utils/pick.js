@@ -5,7 +5,9 @@ const pick = (data, header) => {
 
   return {
     headers: values,
-    rows: values.map((v, i) => [i + 1, v])
+    rows: values.map((v, i) => [i + 1, v]),
+    colId: 0,
+    colValue: 1
   };
 }
 module.exports = pick;

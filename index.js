@@ -4,5 +4,5 @@ const write = require('./utils/write');
 const pick = require('./utils/pick');
 
 read('./data/test2.csv', data => {
-  console.log(pick(data, 'Test1'));
+  console.table(pick(data, 'Test1').rows);
 });
